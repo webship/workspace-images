@@ -1,4 +1,4 @@
-# @webship/workspace-images
+# @webship.co/workspace-images
 
 The **Images** workspace of the [Webship Workspace](https://github.com/webship/workspace) dashboard:
 the `images/` folder (type `media`), its settings file (`core/config/workspace.images.settings.yml`),
