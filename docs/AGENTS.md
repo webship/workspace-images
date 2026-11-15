@@ -36,3 +36,13 @@ The full architecture is in `products/workspace/CLAUDE.md`.
 - **Never put a key, token or password in a file here**, and nothing personal in a picture that is
   shared: no emails, no passwords, no client names unless the work is for that client.
 - **Containers only (DDEV by default)** for anything that runs a site; images here are files, not projects.
+
+## AI items for this folder
+
+The plugin of this folder (`@webship.co/workspace-images`) places its own AI items in the AI folders of the
+workspace, when they are active:
+
+- `images-keeper` (`ai-agents/`): Keeps `images/` in order: files a picture under the folder's naming, says what is there, finds what a document links, checks a picture before it is shared; never changes an original
+- `images-workflow` (`ai-skills/`): How work is done in `images/`: look, name, link, edit as a new file, check before sharing; the gallery, the settings keys and the `svg` block of generated illustrations
+- `/images-add` (`ai-commands/`): `/images-add <file> <what it shows>`: looks at the picture, chooses its folder and name, copies it there and says how a document links it
+- `images-tidy-the-folder` (`ai-prompts/`): A new session that goes through the folder and proposes renames and folders, changing nothing until asked

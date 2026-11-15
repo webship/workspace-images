@@ -1,7 +1,7 @@
 {
   "name": "@webship.co/workspace-images",
   "version": "1.0.8",
-  "description": "The Images workspace for Webship Workspace: the `images/` folder (type media), its settings file, its 0 commands and its docs, activated as a plugin.",
+  "description": "The Images workspace for Webship Workspace: the `images/` folder (type media), its settings file, its 0 commands, its docs and its AI items (an agent, a skill, a command and a prompt, each in the folder of its kind), activated as a plugin.",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
   "license": "ISC",
@@ -11,6 +11,7 @@
   },
   "files": [
     "dist/src",
+    "ai",
     "commands",
     "config",
     "docs",
@@ -26,6 +27,12 @@
   "workspacePlugin": {
     "name": "images",
     "label": "Images",
+    "needs": [
+      "ai-agents",
+      "ai-skills",
+      "ai-commands",
+      "ai-prompts"
+    ],
     "workspace": {
       "key": "images",
       "settingsTemplate": "config/workspace.images.settings.yml",
@@ -34,6 +41,20 @@
         "docs/AGENTS.md",
         "docs/CLAUDE.md",
         "docs/README.md"
+      ]
+    },
+    "ai": {
+      "agents": [
+        "ai/agents/images-keeper.md"
+      ],
+      "skills": [
+        "ai/skills/images-workflow"
+      ],
+      "commands": [
+        "ai/commands/images-add.md"
+      ],
+      "prompts": [
+        "ai/prompts/images-tidy-the-folder.md"
       ]
     },
     "features": [
