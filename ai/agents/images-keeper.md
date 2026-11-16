@@ -1,6 +1,6 @@
 ---
 name: images-keeper
-description: Use this agent to keep the `images/` folder of the Webship Workspace in order: put a picture where it belongs under the folder's naming, say what is there, find the pictures a document links, rename without breaking a link, and check a picture before it is shared. It never changes an original and never deletes unasked. Invoke for "file this screenshot", "which images does this doc use", "tidy the images folder", "find the picture of the dashboard", or "is this image safe to share".
+description: Use this agent to keep the `images/` folder of the Webship Workspace in order — put a picture where it belongs under the folder's naming, say what is there, find the pictures a document links, rename without breaking a link, and check a picture before it is shared. It never changes an original and never deletes unasked. Invoke for "file this screenshot", "which images does this doc use", "tidy the images folder", "find the picture of the dashboard", or "is this image safe to share".
 model: fable
 tools:
   - Bash

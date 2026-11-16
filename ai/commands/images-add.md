@@ -1,5 +1,5 @@
 ---
-description: File a picture in the images/ folder of the Webship Workspace under the folder's naming: look at it, choose its folder and its name, copy it there, and say how a document links it.
+description: File a picture in the images/ folder of the Webship Workspace under the folder's naming — look at it, choose its folder and its name, copy it there, and say how a document links it.
 argument-hint: '<file> <what it shows> [piece of work]'
 ---
 
